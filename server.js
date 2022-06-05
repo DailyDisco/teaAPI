@@ -48,7 +48,7 @@ app.get('/api/:name', (request, response) => {
     if( tea[teaName] ) {
         response.json(tea[teaName])
     } else {
-        response.json(tea['unkown'])
+        response.json(tea['unknown'])
     }
 })
 
