@@ -37,6 +37,7 @@ const tea = {
     }
 }
 
+
 // when we hear a get request we respond with a file
 app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
