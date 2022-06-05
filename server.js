@@ -47,9 +47,9 @@ app.get('/api/:name', (request, response) => {
     const teaName = request.params.name.toLowerCase()
     if( tea[teaName] ) {
         response.json(tea[teaName])
-    } else [
+    } else {
         response.json(tea['unkown'])
-    ]
+    }
 })
 
 // we must create a way for the server to listen to the request
